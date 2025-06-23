@@ -1,10 +1,10 @@
 # Упражнения по JavaScript
 
-Эти упражнения на JavaScript предназначены для дополнения материалов по JavaScript на [twep.ru](https://www.twep.ru/). Их следует выполнять только в соответствии с указаниями, данными в рамках учебной программы.
+Эти упражнения на JavaScript предназначены для дополнения материалов на [twep.ru](https://www.twep.ru/). Их следует выполнять только в соответствии с указаниями, данными в рамках учебной программы.
 
 ## Вклад в развитие проекта
 
-Этот репозиторий — перевод упражнений по JavaScript от проекта [The Odin Project](https://github.com/TheOdinProject/javascript-exercises/).
+Этот репозиторий — перевод упражнений по JavaScript от проекта [The Odin Project](https://github.com/TheOdinProject/javascript-exercises/) на русский язык.
 
 Если у вас есть предложения по улучшению какого-либо упражнения, идея нового упражнения или вы заметили проблему в уже существующем упражнении, пожалуйста, откройте [issue у них в репозитории](https://github.com/TheOdinProject/javascript-exercises/) после того, как внимательно прочитаете [гайд по участию](https://github.com/TheOdinProject/javascript-exercises/blob/main/CONTRIBUTING.md).
 
