@@ -1,40 +1,47 @@
-# JavaScript Exercises
+# Упражнения по JavaScript
 
-These JavaScript exercises are intended to complement the JavaScript content on [The Odin Project](https://www.theodinproject.com/) (TOP). They should only be done when instructed during the course of the curriculum.
+Эти упражнения на JavaScript предназначены для дополнения материалов по JavaScript на [twep.ru](https://www.twep.ru/). Их следует выполнять только в соответствии с указаниями, данными в рамках учебной программы.
 
-## Contributing
+## Вклад в развитие проекта
 
-If you have a suggestion to improve an exercise, an idea for a new exercise, or notice an issue with an exercise, please feel free to open an issue after thoroughly reading our [contributing guide](https://github.com/TheOdinProject/javascript-exercises/blob/main/CONTRIBUTING.md).
+Этот репозиторий — перевод упражнений по JavaScript от проекта [The Odin Project](https://github.com/TheOdinProject/javascript-exercises/).
 
-## How To Use These Exercises
+Если у вас есть предложения по улучшению какого-либо упражнения, идея нового упражнения или вы заметили проблему в уже существующем упражнении, пожалуйста, откройте [issue у них в репозитории](https://github.com/TheOdinProject/javascript-exercises/) после того, как внимательно прочитаете [гайд по участию](https://github.com/TheOdinProject/javascript-exercises/blob/main/CONTRIBUTING.md).
 
-1. Fork and clone this repository. To learn how to fork a repository, see the GitHub documentation on how to [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-   - Copies of repositories on your machine are called clones. If you need help cloning to your local environment you can learn how from the GitHub documentation on [cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
-1. Before you start working on any exercises, you should first ensure you have the following installed:
+Если же у вас есть предложения по переводу этого проекта, то открывайте ишью здесь.
 
-   - **NPM**. You should have installed NPM already in our [Installing Node.js](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/installing-node-js) lesson. Just in case you need to check, type `npm --version` in your terminal. If you get back `Command 'npm' not found, but can be installed with:`, **do not follow the instructions in the terminal** to install with `apt-get` as this causes permission issues. Instead, go back to the installation lesson and install Node with NVM by following the instructions there.
-   - **Jest**. After cloning this repository to your local machine and installing NPM, go into the newly created directory (`cd javascript-exercises`) and run `npm install`. This will install Jest and set up the testing platform based on our preconfigured settings. (Note: if you get warnings that packages are out of date or contain vulnerabilities, you can safely ignore them for these exercises.)
+## Как использовать эти упражнения
 
-1. Each exercise includes the following:
+1. Сделайте форк и клонируйте репозиторий. Чтобы узнать, как это сделать, ознакомьтесь с инструкцией [«Как создать форк репозитория на GitHub»](https://doka.guide/recipes/github-new-fork/).
 
-   - A markdown file with a description of the task, an empty (or mostly empty) JavaScript file, and a set of tests.
-   - A `solutions` directory that contains a solution and the same test file with all of the tests unskipped.
+   - Копии репозиториев на вашем компьютере называются клонами. Если вам нужна помощь при клонировании, вы можете изучить процесс в инструкции [«Как клонировать репозиторий на GitHub: Через командную строку или IDE»](https://thecode.media/git-clone/).
 
-   To complete an exercise, you will need to go to the exercise directory with `cd exerciseName` in the terminal and run `npm test exerciseName.spec.js`. This should run the test file and show you the output. When you run a test for the first time, it will fail. This is by design! You must open the exercise file and write the code needed to get the test to pass.
+2. Прежде чем приступить к выполнению упражнений, убедитесь, что у вас установлены следующие компоненты:
 
-1. Some of the exercises have test conditions defined in their spec file as `test.skip` instead of `test`. This is intentional. Once all `test`s pass, you will change the next `test.skip` to `test` and test your code again. You will do this until all conditions are satisfied. **All tests must pass at the same time**, and you should not have any instances of `test.skip` in the spec file when you are finished with an exercise.
-1. Once you successfully finish an exercise, check the `solutions` directory within each exercise to compare it with yours.
-   - You should not be checking the solution for an exercise until you finish it!
-   - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that is completely fine. Feel free to ask about it in our Discord if there are parts you do not understand.
+   - **NPM**. Вы должны были установить NPM ранее в рамках урока [Установка Node.js](https://www.twep.ru/js/js-basics/installing-node-js/). Для проверки введите `npm --version` в терминал. Если вы получите сообщение `Command 'npm' not found, but can be installed with:`, **не следует выполнять инструкции в терминале** по установке через `apt-get`, так как это может вызвать проблемы с правами. Вместо этого вернитесь к уроку по установке Node.js и установите Node с помощью NVM, следуя указанным там инструкциям.
+   - **Jest**. После клонирования репозитория на локальную машину и установки NPM перейдите в новую директорию (`cd javascript-exercises`) и запустите команду `npm install`. Это установит Jest и настроит платформу тестирования согласно нашим предварительно заданным настройкам. (Примечание: если вы получите предупреждения о том, что некоторые пакеты устарели или содержат уязвимости, вы можете смело их игнорировать при работе над этими упражнениями.)
 
-> [!IMPORTANT]
-> Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
+3. Каждое упражнение включает в себя следующее:
 
-> [!NOTE]
-> Due to the way Jest handles failed tests, it may return an exit code of 1 if any tests fail. NPM will interpret this as an error and you may see some `npm ERR!` messages after Jest runs. You can ignore these, or run your test with `npm test exerciseName.spec.js --silent` to suppress the errors.
+   - Файл Markdown с описанием задачи, пустой (или почти пустой) JavaScript-файл и набор тестов.
+   - Директорию `solutions` с решением и тем же файлом тестов, где все тесты не пропущены.
 
-The first exercise, `helloWorld`, will walk you through the process in-depth.
+   Чтобы выполнить упражнение, перейдите в его директорию с помощью `cd exerciseName` в терминале и запустите `npm test exerciseName.spec.js`. Это запустит тестовый файл и покажет результат. При первом запуске тест будет завершаться неудачей — так и должно быть! Откройте файл упражнения и напишите код, который сделает тест успешным.
 
-## Debugging
+4. Некоторые упражнения имеют условия тестов, определённые в файле спецификации как `test.skip`, а не `test`. Это сделано намеренно. Как только все обычные `test` станут успешными, измените следующий `test.skip` на `test` и снова запустите тесты. Вы будете повторять это до тех пор, пока все условия не будут выполнены. **Все тесты должны быть успешными одновременно**, и когда вы закончите упражнение, в файле спецификации не должно остаться строк `test.skip`.
 
-To debug functions, you can run the tests in the Visual Studio Code debugger terminal. You can open this by clicking the "Run and Debug" icon on the left or pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>, then clicking JavaScript Debug Terminal. You will be able to set breakpoints as you would in the Chrome DevTools debugger. You can run `npm test exerciseName.spec.js` to then execute your code up until your breakpoint and step through your code as necessary. **NOTE**: To take advantage of the debugger, you **MUST** run the script in the debugger terminal, not the bash or zsh terminal.
+5. Когда вы успешно завершите упражнение, сравните своё решение с тем, которое находится в директории `solutions`.
+   - Не заглядывайте в решения, пока не завершите упражнение самостоятельно!
+   - Если ваше решение сильно отличается от нашего решения (но при этом проходит все тесты), это абсолютно нормально.
+
+> [!IMPORTANT]  
+> Не отправляйте свои решения упражнений в этот репозиторий, любые pull request'ы будут закрыты без объединения.
+
+> [!NOTE]  
+> Из-за того, как Jest обрабатывает неудачные тесты, он может вернуть код выхода 1, если какие-либо тесты провалились. NPM интерпретирует это как ошибку, и вы можете увидеть сообщения `npm ERR!` после выполнения Jest. Эти сообщения можно игнорировать, либо вы можете запустить тесты с флагом `--silent`: `npm test exerciseName.spec.js --silent`, чтобы скрыть ошибки.
+
+Первое упражнение, `helloWorld`, подробно проведёт вас через весь процесс.
+
+## Отладка
+
+Для отладки функций вы можете запускать тесты в терминале отладчика Visual Studio Code. Открыть его можно, нажав на значок "Run and Debug" слева или нажав <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>, затем выбрав «JavaScript Debug Terminal». Вы сможете ставить брейкпоинты так же, как это делается в Chrome DevTools. Затем выполните `npm test exerciseName.spec.js`, чтобы запустить ваш код до брейкпоинтов и пошагово пройтись по нему. **Примечание**: Чтобы воспользоваться отладчиком, вы **ОБЯЗАТЕЛЬНО** должны запускать скрипт именно в терминале отладчика, а не в обычном bash или zsh терминале.
