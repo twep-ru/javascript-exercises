@@ -1,50 +1,56 @@
-# Exercise 01 - Hello World
+# Упражнение 01 - Привет, мир
 
-The main purpose of this exercise is to walk you through the process of running the tests and make sure everything is set up and running correctly.
+Основная цель этого упражнения — провести вас через процесс запуска тестов и убедиться, что всё установлено и работает правильно.
 
-In this directory you will find 2 other files:
-  1. `helloWorld.js`
-  2. `helloWorld.spec.js`
+В этой директории вы найдете еще два файла:
 
-This setup should be similar for all of the exercises. The plain javascript file is where you'll write your code, and the `spec` file contains the tests that verify your code is functional.
+1. `helloWorld.js`
+2. `helloWorld.spec.js`
 
-Let's look at the spec file first:
+Эта структура должна быть одинаковой для всех упражнений. Обычный файл JavaScript — это место, где вы будете писать свой код, а файл с тестами (spec) содержит проверки, которые тестируют ваш код на работоспособность.
+
+Давайте посмотрим на файл с тестами (`helloWorld.spec.js`):
+
 ```javascript
-const helloWorld = require('./helloWorld');
+const helloWorld = require('./helloWorld')
 
-describe('Hello World', function() {
-  test('says "Hello, World!"', function() {
-    expect(helloWorld()).toEqual('Hello, World!');
-  });
-});
+describe('Hello World', function () {
+  test('says "Hello, World!"', function () {
+    expect(helloWorld()).toEqual('Hello, World!')
+  })
+})
 ```
-At the very top of the file we use `require()` to import the code from the javascript file (`helloWorld.js`) so that we can test it.
 
-The next block (`describe()`) is the body of the test. Basically, all it's doing is running your code and testing to see if the output is correct. The `test()` function describes what should be happening in plain english and then includes the `expect()` function. For this simple example it should be pretty simple to read.
+В самой верхней части файла мы используем `require()` для импорта кода из JavaScript-файла (`helloWorld.js`), чтобы мы могли протестировать его.
 
-For now you do not need to worry about how to write tests, but you should try to get comfortable enough with the syntax to figure out what the tests are asking you to do. Go ahead and run the tests by entering `npm test helloWorld.spec.js` in the terminal and watch it fail. The output from that command should tell you exactly what went wrong with your code. In this case, running the `helloWorld()` function should return the phrase 'Hello, World!' but instead it returns an empty string...
+Следующий блок (`describe()`) — это основная часть теста. По сути, он просто запускает ваш код и проверяет, правильный ли вывод он возвращает. Функция `test()` описывает на простом английском языке, что должно произойти, а затем содержит функцию `expect()`. В этом простом примере синтаксис должен быть довольно понятен.
 
-so let's look at the javascript file:
+Пока не нужно беспокоиться о том, как писать тесты, но попробуйте разобраться в синтаксисе настолько, чтобы понять, что от вас требуется. Запустите тесты, введя в терминале команду `npm test helloWorld.spec.js`, и посмотрите, как они завершатся с ошибкой. Результат выполнения этой команды должен точно указать вам, что не так с вашим кодом. В данном случае, при вызове функции `helloWorld()` она должна возвращать фразу `'Hello, World!'`, но вместо этого она возвращает пустую строку...
+
+Теперь посмотрим на JavaScript-файл (`helloWorld.js`):
+
 ```javascript
-const helloWorld = function() {
+const helloWorld = function () {
   return ''
 }
 
 module.exports = helloWorld
 ```
-In this file we have a simple function called helloWorld that returns an empty string... which is exactly what our test was complaining about. The `module.exports` on the last line is how we export the function so that it can be imported with `require()` in the spec file.
 
-Go ahead and see if you can make the test pass by editing the return value of the function, and then running the test file again.
+В этом файле у нас есть простая функция `helloWorld`, которая возвращает пустую строку... именно поэтому тест выдал ошибку. Последняя строка `module.exports` используется для экспорта функции, чтобы её можно было импортировать с помощью `require()` в файле с тестами.
 
-Just to make sure, in case you're confused at this point, the test is telling you that running the function `helloWorld` should return the phrase `Hello, World!`. Punctuation and capitalization definitely matter here, so double check that if the test still isn't passing.
+Попробуйте сделать так, чтобы тест проходил успешно: измените возвращаемое значение функции, а затем снова запустите тесты.
 
-This is what the final function should look like:
+Просто чтобы убедиться, если вы где-то запутались, тест говорит вам, что при вызове функции `helloWorld()` она должна возвращать фразу `"Hello, World!"`. Очень важно соблюдать правильную пунктуацию и заглавные буквы, поэтому проверьте это, если тест все ещё не проходит.
+
+Итоговая функция должна выглядеть следующим образом:
+
 ```javascript
-const helloWorld = function() {
+const helloWorld = function () {
   return 'Hello, World!'
 }
 
 module.exports = helloWorld
 ```
 
-For the most part we've set up these tests in such a way that you only have to update or write the code being tested. You should not have to worry about importing or exporting anything at this stage.. so just work around that bit of the code and write what it takes to make them pass!
+Большинство тестов уже настроены таким образом, что вам нужно лишь обновить или написать код, который тестируется. На данном этапе не нужно беспокоиться об импорте или экспорте чего-либо — просто игнорируйте эти части кода и пишите то, что необходимо для успешного прохождения тестов!
