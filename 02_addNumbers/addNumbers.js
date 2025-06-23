@@ -4,10 +4,10 @@ function addNumbers() {
 
   let result;
 
-  result = "a" + "b"; // <------ EDIT THIS LINE
+  result = "a" + "b"; // <------ РЕДАКТИРУЙТЕ ЭТУ СТРОКУ
 
   return result;
 }
 
-// Do not change this
+// Не изменяйте это
 module.exports = addNumbers;
