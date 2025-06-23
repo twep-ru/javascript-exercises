@@ -1,23 +1,25 @@
-# Exercise 04 - mathEquations
+# Упражнение 04 - mathEquations  
 
-Replace the strings to the right of the `=` with the expression they describe. Do **not** manually enter the answers to the equation.
+Замените строки, стоящие справа от знака `=`, на выражения, которые они описывают. Не вводите вручную результаты вычисления уравнений.
 
-Currently, the variables are strings. They need to be math equations instead.
+В данный момент переменные представлены строками. Вместо этого они должны быть математическими выражениями.
 
-To help you, the first variable has been completed for you:
-```js
-const a = 1 - 1 // Freebie!!! This is the answer to "one minus one"
+Для помощи первый пример уже сделан за вас:
+
+```javascript
+const a = 1 - 1 // Пример! Это правильный ответ на "один минус один"
 ```
 
-The following is an example of the **wrong** answer:
-```js
-const a = 0 // WRONG!!! You need to write out the equation, NOT put the result of the equation directly!
+Ниже приведён пример неправильного решения:
+
+```javascript
+const a = 0 // НЕПРАВИЛЬНО!!! Вы должны записать само уравнение, а не его результат!
 ```
 
-Feel free to run the test suite right now to see the first test pass, then go from there. Good luck!
+Вы можете запустить тесты прямо сейчас, чтобы увидеть, как первый тест проходит успешно — а затем продолжайте работать дальше. Удачи!
 
-## Hints
+## Подсказки
 
-- Look at the docs for arithmetic operators in JavaScript for a quick reference.
+- Для справки посмотрите документацию по [арифметическим операторам в JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators).
 
-- Refer back to the [Variables and Operators lesson](https://www.theodinproject.com/lessons/foundations-variables-and-operators) if you are still stuck.
+- Если вы всё ещё испытываете трудности, вернитесь к уроку о переменных и операторах.

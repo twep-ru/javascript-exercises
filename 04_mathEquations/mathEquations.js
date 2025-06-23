@@ -1,9 +1,9 @@
-const a = 1 - 1 // Freebie!!! This is the answer to "one minus one"
-const b = "one plus eight"
-const c = "22 times three"
-const d = "the *remainder* of 5/4"
-const e = "the variable 'b' minus 17"
-const f = "the sum of the previous five variables"
+const a = 1 - 1 // Пример! Это правильный ответ на "один минус один"
+const b = "один плюс восемь"
+const c = "22 раза три"
+const d = "*остаток* от 5/4"
+const e = "переменная 'b' минус 17"
+const f = "сумма предыдущих пяти переменных"
 
-// Do not edit below this line
+// Не редактировать ниже этой строки
 module.exports = {a, b, c, d, e, f}
