@@ -1,20 +1,22 @@
-# Exercise 03 - numberChecker
+# Упражнение 03 - numberChecker
 
-Modify the code so it returns `true` when the number is greater than or equal to 10, and `false` if it is less than 10.
+Измените код так, чтобы он возвращал `true`, если число больше или равно 10, и `false`, если оно меньше 10.
 
-Currently, the code returns `true` if the number is `6`, otherwise, it returns `false`.
+В данный момент код возвращает `true`, только если число равно 6, а в остальных случаях — `false`.
 
-You may also notice that in this exercise, there are multiple tests (in the file `numberChecker.spec.js`). Only the first test is currently enabled. So after making sure that the first test passes, enable the next one by deleting the `.skip` portion from the `test.skip()` function. It is usually easier if you enable only one test a time, then edit your code so that it passes. You can keep enabling only one at a time until slowly but surely, they all pass!
+Вы также можете заметить, что в этом упражнении несколько тестов (в файле `numberChecker.spec.js`). На данный момент включён только первый тест. После того как вы убедитесь, что первый тест проходит успешно, включите следующий тест, удалив часть `.skip` из функции `test.skip()`. Обычно удобнее включать по одному тесту за раз, изменяя код так, чтобы он проходил.
 
-- If running `npm test numberChecker.spec.js` returns results similar to what is shown below, make sure that you have enabled the rest of the tests, as described in the instructions above.
+Продолжайте включать по одному тесту за раз, пока все они не будут пройдены!
+
+Если при запуске `npm test numberChecker.spec.js` результат будет похож на показанный ниже, убедитесь, что вы включили остальные тесты, как описано выше:
 
 ```
 Test Suites: 1 passed, 1 total
 Tests:       3 skipped, 1 passed, 4 total
 ```
 
-## Hints
+## Подсказки
 
-- You only need to edit line 2.
+- Вам нужно отредактировать только строку 2.
 
-- Look at the docs for comparison operators in JavaScript for a quick reference.
+- Посмотрите документацию по операторам сравнения в JavaScript, если застряли.

@@ -6,5 +6,5 @@ function numberChecker(number) {
   }
 }
 
-// Do not edit below this line
+// Не редактировать ниже этой строки
 module.exports = numberChecker;
