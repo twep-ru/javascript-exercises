@@ -1,42 +1,60 @@
-# Exercise 05 - joinStrings
+# Упражнение 05 - joinStrings
 
-## Step 1: Learn
-First, look at the example code in `joinStrings-example.js`. Try and predict what the `console.log` output will be. When you're ready, run the test:
-```bash
+## Шаг 1: Изучите пример
+
+Сначала посмотрите на пример кода в файле `joinStrings-example.js`. Попробуйте предсказать, что выведет `console.log`. Когда будете готовы, запустите тест:
+
+```
 npm test joinStrings-example.spec.js
 ```
-If you saw anything unexpected, feel free to review the code again.
 
-## Step 2: Do
-After understanding the example code, you will recreate the snippet on your own using the following instructions (in `joinStrings.js`):
+Если вывод оказался неожиданным, перечитайте пример кода ещё раз.
 
-1. Create 4 variables: `firstName`, `lastName`, `thisYear`, and `birthYear`
+## Шаг 2: Выполните задание
 
-2. Create a 5th variable, `greeting`, that is constructed from the previous 4 variables
-- It should contain a greeting that includes the person's full name and age
+После того как вы поняли пример, выполните следующее (в файле `joinStrings.js`):
 
-Note: To make the tests pass, you will need to use exact values and wording (as you will see described in `joinStrings.js`). If the tests fail, look at the feedback in your terminal then check your spacing, capitalization, and punctation.
+1. Создайте 4 переменные:
 
-## Step 3: Optimize
-You will edit your code to make it easier to read using the following instructions:
+   - `firstName`
+   - `lastName`
+   - `thisYear`
+   - `birthYear`
 
-1. Create 2 new variables: `fullName` and `age`
-- Do NOT simply type the full name and age into the new variables
-- Instead, use the pre-existing variables, with the calculations that are currently inside of `greeting`
+2. Создайте пятую переменную — `greeting`, которая будет составлена из этих четырёх.
 
-2. Edit the `greeting` string to use `fullName` and `age` instead of the other 4 variables
-- `greeting` should look something like:
-```js
-"Hello! My name is " + fullName
+3. Эта переменная должна содержать приветствие, включающее полное имя человека и его возраст.
+
+> Примечание: Чтобы тесты прошли успешно, вы должны использовать точные значения и формулировки (они указаны в файле `joinStrings.js`). Если тесты не проходят, проверьте пробелы, заглавные буквы и знаки препинания.
+
+## Шаг 3: Оптимизируйте код
+
+Теперь измените свой код, чтобы он стал проще для чтения, выполнив следующие шаги:
+
+1. Создайте две новые переменные:
+
+   - `fullName`
+   - `age`
+
+2. Не вводите вручную значения для `fullName` и `age`.  
+   Вместо этого используйте уже созданные переменные и вычисления, которые ранее находились внутри строки `greeting`.
+
+3. Обновите строку `greeting`, чтобы она использовала новые переменные `fullName` и `age` вместо первых четырёх.
+
+Пример обновлённой строки:
+
+```javascript
+'Hello! My name is ' + fullName
 ```
 
-Run all the tests one last time to ensure that the output remains unchanged:
-```bash
+4. Запустите все тесты ещё раз, чтобы убедиться, что вывод остался прежним:
+
+```
 npm test joinStrings.spec.js
 ```
 
-## Hints
+## Подсказки
 
-- Look at the docs for JavaScript variables for a quick reference.
+- Читайте урок по [переменным в JavaScript](https://learn.javascript.ru/variables).
 
-- Refer back to the [Variables and Operators lesson](https://www.theodinproject.com/lessons/foundations-variables-and-operators) if you are still stuck.
+- Если застряли, вернитесь к уроку о переменных и операторах.
