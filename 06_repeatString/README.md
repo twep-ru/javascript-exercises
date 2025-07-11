@@ -1,19 +1,19 @@
-# Exercise 06 - repeatString
+# Упражнение 06 - repeatString
 
-Write a function that simply repeats the string a given number of times:
+Напишите функцию, которая просто повторяет строку заданное количество раз:
 
 ```javascript
-repeatString('hey', 3) // returns 'heyheyhey'
+repeatString('hey', 3) // возвращает 'heyheyhey'
 ```
 
-This function will take two arguments, `string` and `num`.
+Эта функция будет принимать два аргумента: `string` (строка) и `num` (число).
 
-Use loops to implement `repeatString` rather than using the builtin `String.prototype.repeat` which has the same behaviour.
+Для реализации функции `repeatString` используйте цикл вместо встроенного метода `String.prototype.repeat`, который выполняет ту же задачу.
 
-*Note:* The exercises after this one will not have arguments provided as this one does - you will need to provide them yourself from now on. So read each exercise's README carefully to see what kinds of arguments will be expected.
+*Примечание:* В следующих упражнениях аргументы передаваться не будут — вы сами должны будете их добавлять. Так что внимательно читайте README каждого упражнения, чтобы понять, какие аргументы ожидаются.
 
-## Hints
+## Советы
 
-- Take note of the above function call- how exactly is it being called?
+- Обратите внимание на вызов функции выше — как именно она вызывается?
 
-- Create a variable to hold the string you're going to return, create a loop that repeats the given number of times and add the given string to the result on each loop.
+- Создайте переменную для хранения результирующей строки. Затем создайте цикл, который повторяется заданное количество раз, и на каждой итерации добавляет исходную строку к результату.
