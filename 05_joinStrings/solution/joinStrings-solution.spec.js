@@ -1,25 +1,25 @@
 const values = require('./joinStrings-solution')
 
-describe('follow', () => {
-  test('firstName is Carlos', () => {
+describe('проверка', () => {
+  test('firstName — это Carlos', () => {
     expect(values.firstName).toEqual('Carlos');
   });
-  test('lastName is Stevenson', () => {
+  test('lastName — это Stevenson', () => {
     expect(values.lastName).toEqual('Stevenson');
   });
-  test('thisYear is 1965', () => {
+  test('thisYear — это 1965', () => {
     expect(values.thisYear).toEqual(1965);
   });
-  test('birthYear is 1947', () => {
+  test('birthYear — это 1947', () => {
     expect(values.birthYear).toEqual(1947);
   });
-  test('greeting is properly output', () => {
+  test('greeting сформировано правильно', () => {
     expect(values.greeting).toEqual('Hello! My name is Carlos Stevenson and I am 18 years old.');
   });
-  test('fullName is Carlos Stevenson', () => {
+  test('fullName — это Carlos Stevenson', () => {
     expect(values.fullName).toEqual('Carlos Stevenson');
   });
-  test('age is 18', () => {
+  test('age — это 18', () => {
     expect(values.age).toEqual(18);
   });
 });

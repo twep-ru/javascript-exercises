@@ -1,8 +1,8 @@
 /*
- First name: Carlos
- Last name: Stevenson
- This year: 1965
- Birth year: 1947
+ Имя: Carlos
+ Фамилия: Stevenson
+ Текущий год: 1965
+ Год рождения: 1947
 
  Приветствие должно гласить: "Hello! My name is Carlos Stevenson and I am 18 years old."
 */

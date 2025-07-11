@@ -1,13 +1,13 @@
 /*
- First name: Carlos
- Last name: Stevenson
- This year: 1965
- Birth year: 1947
+ Имя: Carlos
+ Фамилия: Stevenson
+ Текущий год: 1965
+ Год рождения: 1947
 
- The greeting should read: "Hello! My name is Carlos Stevenson and I am 18 years old."
+ Приветствие должно гласить: "Hello! My name is Carlos Stevenson and I am 18 years old."
 */
 
-// Add your code right below, good luck!
+// Добавьте свой код ниже, удачи!
 const firstName = "Carlos";
 const lastName = "Stevenson";
 const thisYear = 1965;

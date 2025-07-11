@@ -1,28 +1,28 @@
 const values = require('./joinStrings')
 
-describe('step 2', () => {
-  test('firstName is Carlos', () => {
+describe('шаг 2', () => {
+  test('firstName — Карлос', () => {
     expect(values.firstName).toEqual('Carlos');
   });
-  test.skip('lastName is Stevenson', () => {
+  test.skip('lastName — Стивенсон', () => {
     expect(values.lastName).toEqual('Stevenson');
   });
-  test.skip('thisYear is 1965', () => {
+  test.skip('thisYear — 1965', () => {
     expect(values.thisYear).toEqual(1965);
   });
-  test.skip('birthYear is 1947', () => {
+  test.skip('birthYear — 1947', () => {
     expect(values.birthYear).toEqual(1947);
   });
-  test.skip('greeting is properly output', () => {
+  test.skip('greeting корректно выводится', () => {
     expect(values.greeting).toEqual('Hello! My name is Carlos Stevenson and I am 18 years old.');
   });
 });
 
-describe('step 3', () => {
-  test.skip('fullName is Carlos Stevenson', () => {
+describe('шаг 3', () => {
+  test.skip('fullName — Карлос Стивенсон', () => {
     expect(values.fullName).toEqual('Carlos Stevenson');
   });
-  test.skip('age is 18', () => {
+  test.skip('age — 18', () => {
     expect(values.age).toEqual(18);
   });
 });
