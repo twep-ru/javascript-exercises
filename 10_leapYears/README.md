@@ -1,17 +1,16 @@
-# Exercise 10 - leapYears
+# Упражнение 10 - Високосные годы
 
-Create a function that determines whether or not a given year is a leap year. Leap years are determined by the following rules:
+Создайте функцию, которая определяет, является ли данный год високосным. Високосные года определяются по следующим правилам:
 
-> Leap years are years divisible by four (like 1984 and 2004). However, years divisible by 100 are not leap years (such as 1800 and 1900) unless they are divisible by 400 (like 1600 and 2000, which were in fact leap years). (Yes, it's all pretty confusing)
+> Високосные года — это годы, делящиеся на четыре (например, 1984 и 2004). Однако годы, делящиеся на 100, не являются високосными (например, 1800 и 1900), если только они не делятся на 400 (например, 1600 и 2000, которые действительно были високосными годами). (Да, это довольно запутанно)
 >
-> -- <cite>[Learn to Program](https://pine.fm/LearnToProgram/chap_06.html) by Chris Pine</cite>
+> -- <cite>[Порядок выполнения и обработка ошибок](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) MDN</cite>
 
 ```javascript
-leapYears(2000) // is a leap year: returns true
-leapYears(1985) // is not a leap year: returns false
+leapYears(2000) // високосный год: возвращает true
+leapYears(1985) // невисокосный год: возвращает false
 ```
-Still confused? Refer to <cite>[this breakdown](https://time-and-calendar.com/leap-years/#:~:text=How%20to%20Know%20if%20Certain%20Year%20is%20a%20Leap%20Year)<cite> with examples.
+Все еще запутались? Обратитесь к <cite>[этому разбору](https://learn.microsoft.com/ru-ru/office/troubleshoot/excel/determine-a-leap-year)<cite> с примерами.
 
-
-## Hints
-- use an `if` statement and `&&` to make sure all the conditions are met properly
+## Подсказки
+- используйте оператор `if` и `&&`, чтобы убедиться, что все условия выполнены правильно
