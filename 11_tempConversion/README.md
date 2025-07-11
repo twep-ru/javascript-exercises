@@ -1,17 +1,17 @@
-# Exercise 11 - tempConversion
+# Упражнение 11 - tempConversion
 
-Write two functions that convert temperatures from Fahrenheit to Celsius, and vice versa:
+Напишите две функции, которые конвертируют температуру из Фаренгейта в Цельсий и наоборот:
 ```
-convertToCelsius(32) // fahrenheit to celsius, should return 0
+convertToCelsius(32) // из фаренгейта в цельсий, должно вернуть 0
 
-convertToFahrenheit(0) // celsius to fahrenheit, should return 32
+convertToFahrenheit(0) // из цельсия в фаренгейт, должно вернуть 32
 ```
 
-Because we are human, we want the result temperature to be rounded to one decimal place: i.e., `convertToCelsius(100)` should return `37.8` and not `37.77777777777778`.
+Поскольку мы люди, мы хотим, чтобы результат округлялся до одного знака после запятой: например, `convertToCelsius(100)` должно вернуть `37.8`, а не `37.77777777777778`.
 
-This exercise asks you to create more than one function so the `module.exports` section of the main javascript file looks a little different this time. Nothing to worry about, we're just packaging both functions into a single object to be exported.
+В этом упражнении нужно создать больше одной функции, поэтому секция `module.exports` в основном файле javascript будет выглядеть немного иначе. Не беспокойтесь, мы просто упаковываем обе функции в один объект для экспорта.
 
-## Hints
-- You can find the relevant formulae on [Wikipedia](https://en.wikipedia.org/wiki/Conversion_of_units_of_temperature).
+## Подсказки
+- Соответствующие формулы можно найти на [Википедии](https://ru.wikipedia.org/wiki/Шкала_температур).
 
-- Try to find by yourself on the Internet how to round a number to 1 decimal place in JavaScript. If you struggle, have a look [here](https://stackoverflow.com/q/7342957/5433628).
+- Попробуйте самостоятельно найти в Интернете, как округлить число до 1 знака после запятой в JavaScript. Если возникнут трудности, посмотрите [здесь](https://ru.hexlet.io/qna/javascript/questions/kak-okruglit-chislo-v-javascript).

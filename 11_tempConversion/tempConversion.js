@@ -4,7 +4,7 @@ const convertToCelsius = function() {
 const convertToFahrenheit = function() {
 };
 
-// Do not edit below this line
+// Не редактировать ниже этой строки
 module.exports = {
   convertToCelsius,
   convertToFahrenheit
