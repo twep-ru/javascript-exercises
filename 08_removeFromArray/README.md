@@ -1,16 +1,17 @@
-# Exercise 08 - removeFromArray
+# Упражнение 08 - removeFromArray
 
-Implement a function that takes an array and some other arguments then removes the other arguments from that array:
+Реализуйте функцию, которая принимает массив и другие аргументы, а затем удаляет эти аргументы из массива:
 
 ```javascript
-removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
+removeFromArray([1, 2, 3, 4], 3); // должна удалить 3 и вернуть [1, 2, 4]
 ```
 
-## Hints
+## Советы
 
-The first test on this one is fairly easy, but there are a few things to think about (or google) here for the later tests:
+Первый тест в этом задании довольно простой, но для прохождения последующих тестов нужно подумать (или поискать в интернете) следующие моменты:
 
-- you can manipulate the original array you pass into the function call or create a new array that is returned as the result.
-- how to remove a single element from an array
-- how to deal with multiple optional arguments in a JavaScript function
-- For more information, check out MDN's page on [function arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) - scroll down to the bit about `Array.from` or the spread operator. You can also check out MDN's page on [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
+- Вы можете изменять исходный массив, переданный в функцию, либо создать новый массив, который будет возвращён как результат.
+- Как удалить отдельный элемент из массива.
+- Как работать с несколькими необязательными аргументами в JavaScript-функции.
+
+Для дополнительной информации ознакомьтесь со страницей MDN об [аргументах функции](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/arguments) — прокрутите вниз до раздела про `Array.from` или оператор распространения (spread operator). Также полезно будет посмотреть документацию на тему [остаточные параметры (rest parameters)](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/rest_parameters).

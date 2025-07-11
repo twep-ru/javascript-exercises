@@ -1,24 +1,23 @@
-// we have 2 solutions here, an easier one and a more advanced one.
-// The easiest way to get an array of the rest of the arguments that are passed to a function
-// is using the rest operator. If this is unfamiliar to you look it up!
+// Здесь приведены 2 решения: одно проще, другое более продвинутое.
+// Самый простой способ получить массив из остальных аргументов, переданных в функцию — использовать оператор rest (...). Если вы с ним не знакомы, поищите информацию!
 const removeFromArray = function (array, ...args) {
-  // create a new empty array
+  // создаём новый пустой массив
   const newArray = [];
-  // use forEach to go through the array
+  // используем forEach для обхода массива
   array.forEach((item) => {
-    // push every element into the new array
-    // UNLESS it is included in the function arguments
-    // so we create a new array with every item, except those that should be removed
+    // добавляем каждый элемент в новый массив
+    // КРОМЕ тех, которые содержатся в аргументах функции
+    // таким образом, мы создаём новый массив из всех элементов, кроме тех, которые нужно удалить
     if (!args.includes(item)) {
       newArray.push(item);
     }
   });
-  // and return that array
+  // возвращаем этот массив
   return newArray;
 };
 
-// A simpler, but more advanced way to do it is to use the 'filter' function,
-// which basically does what we did with the forEach above.
+// Более простой, но более продвинутый способ — использовать функцию 'filter',
+// которая по сути делает то же самое, что и forEach выше.
 
 // const removeFromArray = function(array, ...args) {
 //   return array.filter(val => !args.includes(val))
