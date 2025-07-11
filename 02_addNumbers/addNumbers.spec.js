@@ -1,7 +1,7 @@
 const addNumbers = require('./addNumbers')
 
 describe('addNumbers', () => {
-  test('adds the numbers together', () => {
+  test('суммирует числа вместе', () => {
     expect(addNumbers()).toEqual(2);
   });
 });
