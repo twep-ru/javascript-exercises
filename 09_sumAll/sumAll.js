@@ -1,6 +1,7 @@
+// Функция sumAll должна возвращать сумму всех целых чисел между двумя заданными числами (включительно)
 const sumAll = function() {
 
 };
 
-// Do not edit below this line
+// Не изменяйте код ниже этой строки
 module.exports = sumAll;

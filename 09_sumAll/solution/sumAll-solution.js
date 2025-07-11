@@ -7,8 +7,8 @@ const sumAll = function (min, max) {
     max = temp;
   }
 
-  // An alternative way to swap the values of min and max like above is to use the array destructuring syntax.
-  // Here's an optional article on it: https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/
+  // Альтернативный способ поменять местами значения min и max, как показано выше, — использовать синтаксис деструктуризации массива.
+  // Вот дополнительная статья на эту тему: https://learn.javascript.ru/destructuring-assignment
   // if (min > max) [min, max] = [max, min];
   
   let sum = 0;

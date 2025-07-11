@@ -1,17 +1,16 @@
-# Exercise 09 - sumAll
+# Упражнение 09 - sumAll
 
-Implement a function that takes 2 positive integers and returns the sum of every integer between (and including) them:
+Реализуйте функцию, которая принимает 2 положительных целых числа и возвращает сумму всех целых чисел между ними (включительно):
 
 ```javascript
-sumAll(1, 4) // returns the sum of 1 + 2 + 3 + 4 which is 10
+sumAll(1, 4) // возвращает сумму 1 + 2 + 3 + 4, то есть 10
 ```
 
+## Советы
 
-## Hints
-
-Think about how you would do this on pen and paper and then how you might translate that process into code:
-- make sure you pay attention to the function parameters
-- create a variable to hold the final sum
-- loop through the given numbers ([link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration))
-- on each iteration add the number to the sum
-- return the sum after finishing the loop
+Подумайте, как бы вы решили эту задачу на бумаге, а затем попробуйте перевести этот процесс в код:
+- обратите внимание на параметры функции
+- создайте переменную для хранения итоговой суммы
+- используйте цикл для перебора заданных чисел ([ссылка](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration))
+- на каждой итерации добавляйте число к сумме
+- верните сумму после завершения цикла

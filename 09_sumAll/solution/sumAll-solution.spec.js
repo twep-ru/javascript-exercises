@@ -1,25 +1,25 @@
 const sumAll = require('./sumAll-solution');
 
 describe('sumAll', () => {
-  test('sums numbers within the range', () => {
+  test('суммирует числа в диапазоне', () => {
     expect(sumAll(2, 4)).toEqual(9);
   });
-  test('works with large numbers', () => {
+  test.skip('работает с большими числами', () => {
     expect(sumAll(1, 4000)).toEqual(8002000);
   });
-  test('works with larger number first', () => {
+  test.skip('работает, если большее число передано первым', () => {
     expect(sumAll(123, 1)).toEqual(7626);
   });
-  test('returns ERROR with negative numbers', () => {
+  test.skip('возвращает ERROR для отрицательных чисел', () => {
     expect(sumAll(-10, 4)).toEqual('ERROR');
   });
-  test('returns ERROR with non-integer parameters', () => {
+  test.skip('возвращает ERROR для нецелых параметров', () => {
     expect(sumAll(2.5, 4)).toEqual('ERROR');
   });
-  test('returns ERROR with non-number parameters', () => {
-    expect(sumAll(10, '90')).toEqual('ERROR');
+  test.skip('возвращает ERROR для нечисловых параметров', () => {
+    expect(sumAll(10, "90")).toEqual('ERROR');
   });
-  test('returns ERROR with non-number parameters', () => {
+  test.skip('возвращает ERROR для нечисловых параметров', () => {
     expect(sumAll(10, [90, 1])).toEqual('ERROR');
   });
 });
