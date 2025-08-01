@@ -1,10 +1,10 @@
-# Exercise 13 - Palindromes
+# Упражнение 13 - Палиндромы
 
-Write a function that determines whether or not a given string is a palindrome.
+Напишите функцию, которая определяет, является ли заданная строка палиндромом.
 
-A palindrome is a string that is spelled the same both forwards and backwards, usually without considering punctuation or word breaks:
+Палиндром - это строка, которая пишется одинаково как в прямом, так и в обратном направлении, обычно без учета знаков препинания или переносов слов:
 
-### some palindromes:
+### некоторые палиндромы:
   - A car, a man, a maraca.
   - Rats live on no evil star.
   - Lid off a daffodil.
@@ -15,5 +15,3 @@ A palindrome is a string that is spelled the same both forwards and backwards, u
 palindromes('racecar') // true
 palindromes('tacos') // false
 ```
-
-
