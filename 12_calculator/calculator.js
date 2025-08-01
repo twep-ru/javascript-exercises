@@ -22,7 +22,7 @@ const factorial = function() {
 	
 };
 
-// Do not edit below this line
+// Не редактировать ниже этой строки
 module.exports = {
   add,
   subtract,
