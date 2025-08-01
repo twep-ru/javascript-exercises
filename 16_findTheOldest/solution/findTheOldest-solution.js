@@ -16,12 +16,12 @@ const findTheOldest = function (people) {
   });
 };
 
-/* ALTERNATIVE SOLUTION
+/* АЛЬТЕРНАТИВНОЕ РЕШЕНИЕ
 const getAge = function (person) {
-  // The nullish coalescing assignment operator
-  // only does the assignment if the left side is "nullish" (evaluates to undefined or null)
-  // if the left side has any other value, no assignment happens
-  // here, we use ??= to set the current year for our subtraction below only if there is no year of death
+  // Оператор присваивания с нулевым слиянием
+  // выполняет присваивание только если левая сторона "нулевая" (равна undefined или null)
+  // если левая сторона имеет любое другое значение, присваивание не происходит
+  // здесь мы используем ??= чтобы установить текущий год для нашего вычитания ниже только если нет года смерти
   person.yearOfDeath ??= new Date().getFullYear();
 
   return person.yearOfDeath - person.yearOfBirth;

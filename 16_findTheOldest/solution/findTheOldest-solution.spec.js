@@ -1,7 +1,7 @@
 const findTheOldest = require('./findTheOldest-solution');
 
 describe('findTheOldest', () => {
-  test('finds the oldest person!', () => {
+  test('находит самого старого человека!', () => {
     const people = [
       {
         name: 'Carly',
@@ -21,7 +21,7 @@ describe('findTheOldest', () => {
     ];
     expect(findTheOldest(people).name).toBe('Ray');
   });
-  test('finds the oldest person if someone is still living', () => {
+  test('находит самого старого человека, если кто-то еще жив', () => {
     const people = [
       {
         name: 'Carly',
@@ -40,7 +40,7 @@ describe('findTheOldest', () => {
     ];
     expect(findTheOldest(people).name).toBe('Ray');
   });
-  test('finds the oldest person if the OLDEST is still living', () => {
+  test('находит самого старого человека, если САМЫЙ СТАРЫЙ еще жив', () => {
     const people = [
       {
         name: 'Carly',
